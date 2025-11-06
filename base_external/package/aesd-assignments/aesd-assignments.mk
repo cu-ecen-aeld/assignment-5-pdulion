@@ -26,8 +26,8 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 
 	$(INSTALL) -d 0755 $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/usr/bin/writer
-	$(INSTALL) -m 0755 $(@D)/finder-app/finder $(TARGET_DIR)/usr/bin/finder
-	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test $(TARGET_DIR)/usr/bin/finder-test
+	$(INSTALL) -m 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/usr/bin/finder.sh
+	$(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/usr/bin/finder-test.sh
 endef
 
 $(eval $(generic-package))
